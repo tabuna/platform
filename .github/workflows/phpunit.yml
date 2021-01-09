@@ -8,7 +8,7 @@ jobs:
   random:
     runs-on: ubuntu-latest
     steps:
-    - uses: ./.github/actions/random
+    - uses: ./.github/actions/random.yml
   phpunit:
     needs: random
     runs-on: ${{ matrix.os }}
