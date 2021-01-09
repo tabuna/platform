@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: ./.github/actions/random.yml
+      - uses: ./.github/actions/random
   phpunit:
     needs: random
     runs-on: ${{ matrix.os }}
